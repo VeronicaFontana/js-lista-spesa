@@ -2,15 +2,18 @@ const listaSpesa = ["uova", "latte", "pasta", "frutta", "verdura", "carne"];
 
 let indice = 0;
 const ul = document.querySelector("ul");
-const li = document.querySelector("li");
-
 
 while(indice < listaSpesa.length){
-  const prodotti = listaSpesa[indice];
-  ul.append(li)
+  let prodotti = listaSpesa[indice];
+  const li = document.createElement("li");
+  
   li.append(prodotti)
+  ul.append(li)
 
   indice++
+  
 }
 
 console.log(listaSpesa[indice])
+
+
